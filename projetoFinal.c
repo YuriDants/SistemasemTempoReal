@@ -100,13 +100,6 @@ void freeFila(Fila* fila) {
     free(fila);
 }
 
-// Função para comparar prioridades dos trens
-int compararprioridade(Trem* trem1, Trem* trem2) {
-    if (trem1->prioridade == trem2->prioridade){
-        return rand()%2;
-    }else   return (trem1->prioridade > trem2->prioridade) ? 1 : 0;
-}
-
 
 // Função para encontrar a fila com o trem de maior prioridade na frente
 Fila* encontrarfila(Fila* fila1, Fila* fila2) {
